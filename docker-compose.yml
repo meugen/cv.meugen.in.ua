@@ -1,0 +1,6 @@
+services:
+  cv.database:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: cv
+      POSTGRES_PASSWORD: Welc0me!@
