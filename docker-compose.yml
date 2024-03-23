@@ -4,3 +4,5 @@ services:
     environment:
       POSTGRES_DB: cv
       POSTGRES_PASSWORD: Welc0me!@
+    ports:
+      - 5432:5432
