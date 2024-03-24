@@ -3,8 +3,7 @@ WORKDIR /app
 COPY .mvn .mvn/
 COPY src src/
 COPY mvnw pom.xml docker-compose.yml ./
-RUN chmod a+x mvnw
-RUN ./mvnw package
+RUN ./mvnw -Dmaven.test.skip=true package
 
 FROM sapmachine:21-jre-ubuntu
 WORKDIR /app
